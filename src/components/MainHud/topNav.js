@@ -30,7 +30,7 @@ export default () => {
         `}
       >
         <FaLockOpen />
-        <span> 8:33 AM</span>
+        <span> 9:23 AM</span>
         <span> 81°F</span>
       </div>
       <div
