@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import styled from '@emotion/styled';
+import React, { useState } from "react";
+import styled from "@emotion/styled";
 
 const Option = styled.span`
   display: inline-flex;
@@ -8,12 +8,13 @@ const Option = styled.span`
   cursor: pointer;
   align-items: center;
   justify-content: center;
-  height: 100px;
+  height: 125px;
   transition: all 0.2s ease;
   width: 250px;
   border-radius: 27px;
-  margin: 25px;
+  margin-right: 25px;
   color: white;
+  font-weight: 600;
 `;
 export default ({ start, children }) => {
   const [selected, select] = useState(start);
@@ -29,8 +30,8 @@ export default ({ start, children }) => {
         clicker();
       }}
       style={{
-        background: selected ? '#24f' : '#aaa',
-        color: selected ? 'white' : 'black',
+        background: selected ? "#24f" : "#aaa",
+        color: selected ? "white" : "black"
       }}
     >
       {children}

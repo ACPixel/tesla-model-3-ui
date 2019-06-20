@@ -5,6 +5,13 @@ import SubMenu from "./components/subMenu";
 import Slider from "./components/slider";
 import styled from "@emotion/styled";
 
+const SubHeader = styled.div`
+  font-size: 16px;
+  margin: 10px;
+  font-weight: bold;
+  color: #888;
+`;
+
 const Header = styled.div`
   font-size: 24px;
   margin: 10px;
@@ -14,21 +21,14 @@ const Header = styled.div`
 function AppRouter() {
   return (
     <div>
-      <Header>Exterior Lights</Header>
+      <SubHeader>Exterior</SubHeader>
+      <Header>Headlights</Header>
       <Switcher current={3} options={["OFF", "PARKING", "ON", "AUTO"]} />
       <Toggle start={true}>FRONT FOG</Toggle>
-      <Header>Adjustments</Header>
-      <div>
-        <SubMenu>MIRRORS</SubMenu>
-        <SubMenu>STEERING WHEEL</SubMenu>
-      </div>
-      <Toggle start={false}>FOLD</Toggle>
-      <Header>Windows</Header>
-
-      <Toggle start={false}>WINDOW LOCK</Toggle>
-
-      <Header>Display Brightness</Header>
-      <Slider current={100} options={["OFF", "PARKING", "ON", "AUTO"]} />
+      <SubHeader>Interior</SubHeader>
+      <Header>Dome Lights</Header>
+      <Switcher current={2} options={["OFF", "ON", "AUTO"]} />
+      <Toggle start={true}>AMBIENT LIGHTS</Toggle>
     </div>
   );
 }
