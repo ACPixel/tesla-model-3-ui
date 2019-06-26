@@ -13,6 +13,7 @@ const Main = styled.div`
   background: #eee;
   min-width: 100%;
   min-height: 100%;
+  overflow: hidden;
 `;
 
 function AppRouter() {

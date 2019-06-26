@@ -1,8 +1,7 @@
 import React from "react";
 import Switcher from "./components/switcher";
 import Toggle from "./components/toggle";
-import SubMenu from "./components/subMenu";
-import Slider from "./components/slider";
+import Switch from "./components/switch";
 import styled from "@emotion/styled";
 
 const SubHeader = styled.div`
@@ -29,6 +28,7 @@ function AppRouter() {
       <Header>Dome Lights</Header>
       <Switcher current={2} options={["OFF", "ON", "AUTO"]} />
       <Toggle start={true}>AMBIENT LIGHTS</Toggle>
+      <Switch>Auto High Beam</Switch>
     </div>
   );
 }
